@@ -25,6 +25,7 @@ document.getElementById('loadData').addEventListener('click', function() {
     } else {
         alert('Please select a file to upload.');
     }
-});document.getElementById("behanceBtn").addEventListener("click", function () {
-    window.open("https://www.behance.net/hariunnikrishnan", "_blank");
-  });
+});
+// document.getElementById("behanceBtn").addEventListener("click", function () {
+//     window.open("https://www.behance.net/hariunnikrishnan", "_blank");
+//   });
