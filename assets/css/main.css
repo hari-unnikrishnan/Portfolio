@@ -715,6 +715,8 @@
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
+    background-color: #454444;
+    color: #f3f1f0;
   }
   
   .hero .social-links a:hover {
