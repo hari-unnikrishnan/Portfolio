@@ -118,94 +118,94 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    $('#forgot-password').click(function (e) {
-        e.preventDefault();
-        $('#login-box').hide();
-        $('#reset-box').show();
-    });
-
-
-    $('#create-new-account').click(function (e) {
-        e.preventDefault();
-        $('#login-box').hide();
-        $('#create-box').show();
-    });
+//     $('#forgot-password').click(function (e) {
+//         e.preventDefault();
+//         $('#login-box').hide();
+//         $('#reset-box').show();
+//     });
 
 
-    $('#back-to-login').click(function (e) {
-        e.preventDefault();
-        $('#reset-box').hide();
-        $('#login-box').show();
-    });
+//     $('#create-new-account').click(function (e) {
+//         e.preventDefault();
+//         $('#login-box').hide();
+//         $('#create-box').show();
+//     });
 
 
-    $('#back-to-login-create').click(function (e) {
-        e.preventDefault();
-        $('#create-box').hide();
-        $('#login-box').show();
-    });
-});
+//     $('#back-to-login').click(function (e) {
+//         e.preventDefault();
+//         $('#reset-box').hide();
+//         $('#login-box').show();
+//     });
+
+
+//     $('#back-to-login-create').click(function (e) {
+//         e.preventDefault();
+//         $('#create-box').hide();
+//         $('#login-box').show();
+//     });
+// });
 
 
 // about
 
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-images img');
-const totalImages = images.length;
+// let currentIndex = 0;
+// const images = document.querySelectorAll('.carousel-images img');
+// const totalImages = images.length;
 
 
-function updateCarousel() {
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}vw)`;
-}
+// function updateCarousel() {
+//     const offset = -currentIndex * 100;
+//     document.querySelector('.carousel-images').style.transform = `translateX(${offset}vw)`;
+// }
 
 
-document.getElementById('left-arrow').addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
-    updateCarousel();
-});
+// document.getElementById('left-arrow').addEventListener('click', () => {
+//     currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+//     updateCarousel();
+// });
 
 
-document.getElementById('right-arrow').addEventListener('click', () => {
-    currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
-    updateCarousel();
-});
+// document.getElementById('right-arrow').addEventListener('click', () => {
+//     currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+//     updateCarousel();
+// });
 
 
-images.forEach((img) => {
-    img.addEventListener('click', () => {
-        const info = img.getAttribute('data-info');
-        document.getElementById('popup-info').innerText = info;
-        document.getElementById('popup').style.display = 'block';
-    });
-});
+// images.forEach((img) => {
+//     img.addEventListener('click', () => {
+//         const info = img.getAttribute('data-info');
+//         document.getElementById('popup-info').innerText = info;
+//         document.getElementById('popup').style.display = 'block';
+//     });
+// });
 
 
-document.getElementById('close-popup').addEventListener('click', () => {
-    document.getElementById('popup').style.display = 'none';
-});
+// document.getElementById('close-popup').addEventListener('click', () => {
+//     document.getElementById('popup').style.display = 'none';
+// });
 
 
-document.getElementById('popup').addEventListener('click', (event) => {
-    if (event.target === event.currentTarget) {
-        document.getElementById('popup').style.display = 'none';
-    }
-});
-// contact
+// document.getElementById('popup').addEventListener('click', (event) => {
+//     if (event.target === event.currentTarget) {
+//         document.getElementById('popup').style.display = 'none';
+//     }
+// });
+// // contact
 
-document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-
-    document.getElementById("thankYouPopup").style.display = "flex";
+// document.getElementById("contact-form").addEventListener("submit", function (event) {
+//     event.preventDefault();
 
 
-    this.reset();
-});
+//     document.getElementById("thankYouPopup").style.display = "flex";
 
 
-document.getElementById("closePopup").addEventListener("click", function () {
-    document.getElementById("thankYouPopup").style.display = "none";
-});
+//     this.reset();
+// });
+
+
+// document.getElementById("closePopup").addEventListener("click", function () {
+//     document.getElementById("thankYouPopup").style.display = "none";
+// });
