@@ -991,6 +991,8 @@
     transition: all ease-in-out 0.3s;
     background: rgba(0, 0, 0, 0.6);
     padding: 15px;
+    margin-right: 10px;
+   
   }
   
   .portfolio .portfolio-content .portfolio-info h4 {
@@ -1012,12 +1014,14 @@
     font-size: 16px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .portfolio .portfolio-content .portfolio-info .preview-link,
   .portfolio .portfolio-content .portfolio-info .details-link {
     position: absolute;
-    left: calc(50% - 40px);
+    left: calc(50% - 30px);
     font-size: 26px;
     top: calc(50% - 14px);
     color: #fff;
@@ -1031,7 +1035,7 @@
   }
   
   .portfolio .portfolio-content .portfolio-info .details-link {
-    left: 50%;
+    left: 30%;
     font-size: 34px;
     line-height: 0;
   }
@@ -1043,6 +1047,9 @@
   .portfolio .portfolio-content:hover img {
     transform: scale(1.1);
   }
+
+
+  
   
   /*--------------------------------------------------------------
   # Pricing Section
@@ -1334,7 +1341,8 @@
     padding: 0;
     color: color-mix(in srgb, var(--default-color), transparent 30%);
   }
-  
+
+
   /*--------------------------------------------------------------
   # Service Details Section
   --------------------------------------------------------------*/
@@ -1522,11 +1530,14 @@
     color: #333;
     /* Sets icon color */
     text-decoration: none;
-    /* Removes underline */
+    
   }
   
   a:hover {
     color: #007bff;
-    /* Changes color on hover */
   }
+
+
+ 
+  
   
