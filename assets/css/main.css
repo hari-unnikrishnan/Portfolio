@@ -991,7 +991,7 @@
     transition: all ease-in-out 0.3s;
     background: rgba(0, 0, 0, 0.6);
     padding: 15px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
    
   }
   
