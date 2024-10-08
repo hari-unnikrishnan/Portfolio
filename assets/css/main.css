@@ -1048,6 +1048,34 @@
     transform: scale(1.1);
   }
 
+/* adding */
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between; /* Adds space between the items */
+  /* gap: 20px;  */
+}
+
+.portfolio-item {
+  /* flex: 1; */
+  max-width: 30%; 
+}
+
+/* .portfolio-content {
+  position: relative;
+  text-align: center;
+} */
+
+/* .portfolio-info {
+  margin-top: 10px;
+} */
+
+/* .img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
 
   
   
