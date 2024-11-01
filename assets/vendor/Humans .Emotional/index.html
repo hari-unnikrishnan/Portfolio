@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/window.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <div class="preloader-wrapper">
+        <div class="preloader"></div>
+    </div> -->
+    
+    
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="image/Logo.png" alt="Brand Logo" style="height: 50px; width: auto;">
+          </div>
+        <nav class="navbar-links" id="navbar-links" aria-label="Main navigation">
+            <a href="index.html" aria-label="Home page">Home</a>
+            <a href="About.html" aria-label="About us">About</a>
+            <a href="Services.html" aria-label="Our services">Services</a>
+            <a href="contact.html" aria-label="Contact us">Contact</a>
+            <a href="loginpage.html" aria-label="Login to your account" class="login-link">
+            <i class="fas fa-sign-in-alt"></i> Login
+          
+        </nav>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-background"></div>
+        <h1>Bring Your Baggage</h1>
+        <p class="subtitle">Emotional Wellness</p>
+        <div class="arrow left-arrow" onclick="changeImage(-3)">&#10094;</div>
+        <div class="arrow right-arrow" onclick="changeImage(3)">&#10095;</div>
+    </section>
+
+    <section class="main-content">
+        <h2>Want to own an Okay Humans?</h2>
+        <div class="franchise-image">
+            <img src="image/image1.png" alt="Franchise Opportunity Image">
+            <p><strong>----------- HERE’S WHAT YOU NEED TO KNOW -----------</strong></p>
+            <p>Hi there! We’re so pleased you’re interested in an Okay Humans franchise. Below you’ll find a 
+                whole bunch of helpful information about us, and what it takes to become an Operating Partner. 
+                There’s an application at the bottom of the page, but if you wanna cut to the chase, click here!</p>
+        </div>
+        
+        <button class="cta-button">Take me to the application</button>
+        
+        <section class="our-story">
+            <h4>Our Story</h4>
+
+            <p class="centered-paragraph">
+                Okay Humans was founded by...
+            </p>
+            
+            <div class="story-content">
+                <p>Christy Desai, Okay Humans Co-Founder,
+                    CEO and LMFT, joined forces with the founders of 
+                    Drybar and Squeeze to bring her new talk therapy 
+                    concept to life. Boasting a combined 100+ years of 
+                    launching and operating experience-driven, 
+                    customer-obsessed brands, the multifaceted team 
+                    has their sights set on changing the way people 
+                    experience retail across categories – and more 
+                    importantly – leaving their mark on people’s lives, 
+                    and the world, for good.</p>
+        
+                <img src="image/image2.png" alt="Founder Image">
+            </div>
+
+            <div class="story-content">
+                <img src="image/image3.png" alt="Founder Image">
+                <p>Christy’s own experience with therapy turned
+                    into a personal mission to help other people feel 
+                    better, stronger, and more alive. She believes 
+                    there’s no reason why talking to a trained 
+                    professional shouldn’t be as acceptable as going 
+                    to the dentist, the hair salon, or seeking out a 
+                    personal trainer. Okay Humans was designed
+                    to normalize seeking support, to rethink the 
+                    outdated therapy model, and to open up the 
+                    conversation about getting to okay.
+                </p>
+            </div>
+        </section>
+        
+        <section class="how-it-works">
+            <h3>How It Works</h3>
+            <div class="work-steps">
+                <div class="step">
+                    <img src="image/image6.png" alt="Step 1">
+                    <p><b>Finding a therapist is easy.</b></p>
+                    <p>Videos and bios make it 
+                        simple to find the perfect
+                        fit, before you book.</p>
+                </div>
+                <div class="step">
+                    <img src="image/image5.png" alt="Step 2">
+                    <p><b>It’s not an oasis.</b></p>
+                    <p>Our beautiful space will help
+                        you start to feel okay the minute 
+                        you walk through the door.</p>
+                </div>
+                <div class="step">
+                    <img src="image/image4.png" alt="Step 3">
+                    <p><b>Our app makes booking a snap!</b></p>
+                    <p>Book, pay, check in, receive 
+                        notes from your therapist 
+                        and everything in between!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="design-construction">
+            <div class="content-container">
+                <img src="image/image7.png" alt="Design Construction Image">
+                <p>
+                    In partnership with the award-winning firm of Heitler 
+                    Houston Architects, our best-in-class real estate and 
+                    construction project management team will guide
+                    you through the entire process from selecting your
+                    Okay Humans location through space planning,
+                    design and construction project management.
+                    We have negotiated a flat fee for real estate and 
+                    construction project management as well as design
+                    and architectural services for each new Okay Humans 
+                    location, which is well below the industry standard for 
+                    work of this caliber.
+                </p>
+            </div>
+            <img src="image/image8.png" alt="Design Construction Image" class="below-text-image">
+        </section>
+
+        <section>
+            <div class="clients">
+                <h2>Our Clients</h2>
+                <div class="client-logo" id="scrollable">
+                    <div class="client-item">
+                        <img src="image/Client11.png" alt="Client 1" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            In today's digital landscape, having a visually appealing and functional website is essential 
+                            for effectively communicating your brand's message and engaging with your audience. 
+                           
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client12.png" alt="Client 2" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            To design a user-friendly website that effectively showcases your services and expertise.
+                            To provide tailored induction sessions for your team, enhancing their ability to communicate 
+                           
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client13.png" alt="Client 3" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            Custom website design tailored to your brand identity.
+                            Responsive design for optimal viewing on all devices.
+                            User experience (UX) optimization to enhance navigation and usability.
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client14.png" alt="Client 4" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            Developing a content plan that aligns with your business goals.
+                            Crafting compelling copy and visuals that resonate with your target audience.
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client15.png" alt="Client 5" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            Personalized training for team members on how to navigate and utilize the website effectively.
+                            Strategies for speaking confidently about website features and benefits during client interactions.
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client16.png" alt="Client 5" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            Personalized training for team members on how to navigate and utilize the website effectively.
+                            Strategies for speaking confidently about website features and benefits during client interactions.
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <img src="image/Client17.png" alt="Client 5" class="client-image">
+                        <p><b>Client's Name</b><br>
+                            Developing a content plan that aligns with your business goals.
+                            Crafting compelling copy and visuals that resonate with your target audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sign-up">
+            <h3>Sign Me Up!</h3>
+            <form action="submit.php" method="POST" class="form-inline">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="street_address" placeholder="Street Address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="text" name="country" placeholder="Country" required>
+                <input type="text" name="zip_code" placeholder="Zip Code" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+                <input type="text" name="cash_available_for_investment" placeholder="Cash Available for Investment" required>
+                <input type="text" name="net_worth" placeholder="Net Worth" required>
+                <input type="text" name="investment_time_frame" placeholder="Investment Time Frame" required>
+                <input type="text" name="linkedin_profile_url" placeholder="LinkedIn Profile URL (optional)">
+                <input type="text" name="how_did_you_hear_about_us" placeholder="How did you hear about us?" required>
+                <textarea name="about_yourself" placeholder="Tell us a little bit about yourself and why you are interested in an Okay Humans franchise." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="image/image9.png" alt="Logo Image" class="footer-logo">
+            <div class="icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+       
+            <div class="footer-links">
+                <div>
+                    <a href="#">HOW IT WORKS</a>
+                    <a href="#">MEET OUR THERAPISTS</a>
+                    <a href="#">PRICING</a>
+                    <a href="#">MEMBERSHIP</a>
+                    <a href="#">PRESS</a>
+                </div>
+                <div>
+                    <a href="#">GIVE A GIFT</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">CAREERS</a>
+                    <a href="#">LOCATIONS</a>
+                    <a href="#">FRANCHISE</a>
+                </div>
+                <div>
+                    <a href="#">PHILANTHROPY</a>
+                    <a href="#">HELP</a>
+                    <a href="#">1-8XX-XXXX</a>
+                    <a href="#">TERMS OF USE</a>
+                    <a href="#">PRIVACY POLICY</a>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+ </body>
+</html>
