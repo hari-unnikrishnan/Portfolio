@@ -1,0 +1,101 @@
+
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+
+  
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+.list-group-item-action {
+  width: 100%; 
+  color: $list-group-action-color;
+  text-align: inherit;
+
+
+  @include hover-focus {
+    color: $list-group-action-hover-color;
+    text-decoration: none;
+    background-color: $list-group-hover-bg;
+  }
+
+  &:active {
+    color: $list-group-action-active-color;
+    background-color: $list-group-action-active-bg;
+  }
+}
+
+
+
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: $list-group-item-padding-y $list-group-item-padding-x;
+ 
+  margin-bottom: -$list-group-border-width;
+  background-color: $list-group-bg;
+  border: $list-group-border-width solid $list-group-border-color;
+
+  &:first-child {
+    @include border-top-radius($list-group-border-radius);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    @include border-bottom-radius($list-group-border-radius);
+  }
+
+  @include hover-focus {
+    z-index: 1; 
+    text-decoration: none;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $list-group-disabled-color;
+    background-color: $list-group-disabled-bg;
+  }
+
+  
+  &.active {
+    z-index: 2; 
+    color: $list-group-active-color;
+    background-color: $list-group-active-bg;
+    border-color: $list-group-active-border-color;
+  }
+}
+
+
+
+.list-group-flush {
+  .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    @include border-radius(0);
+  }
+
+  &:first-child {
+    .list-group-item:first-child {
+      border-top: 0;
+    }
+  }
+
+  &:last-child {
+    .list-group-item:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+
+
+
+@each $color, $value in $theme-colors {
+  @include list-group-item-variant($color, theme-color-level($color, -9), theme-color-level($color, 6));
+}
