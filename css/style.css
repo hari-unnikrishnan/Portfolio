@@ -12828,7 +12828,7 @@ h5,
 .progress-bar span {
   position: absolute;
   top: -38px;
-  right: -34px;
+  right: 0px;
   font-size: 20px;
   font-weight: 400;
   color: #fff;
