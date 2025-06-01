@@ -13949,3 +13949,20 @@ textarea.form-control {
     font-size: 16px;
   }
 }
+
+
+#thankYouMessage {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: auto  !important;
+}
+
+.smile {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
