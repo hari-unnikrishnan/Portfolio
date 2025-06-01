@@ -13933,6 +13933,19 @@ textarea.form-control {
   }
 }
 
+@media (max-width: 768px) {
+  .progress-bar span {
+    top: -28px;
+    right: -56px;
+    font-size: 16px;
+  }
+}
 
-
-
+/* Adjust for mobile */
+@media (max-width: 600px) {
+  .progress-bar span {
+    top: -20px;
+    right: -23px;
+    font-size: 16px;
+  }
+}
