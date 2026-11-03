@@ -1,0 +1,163 @@
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.left-side {
+    flex: 1;
+    text-align: center;
+    padding-top: 1em;
+    position: relative;
+    width: 50%; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; 
+    height: 100%; 
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.out-top {
+    animation: rotate 20s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.in-top {
+    animation: rotate 10s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.out-bottom {
+    animation: rotate 25s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+.in-bottom {
+    animation: rotate 15s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signin-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(31%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.912);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.signin-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+
+.signin-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.signin-container input[type="text"], .signin-container input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.signin-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.signin-container button:hover {
+    background-color: #555;
+}
+
+
+.signin-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signin-container p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.signin-container p a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side h1 {
+        font-size: 2em;
+    }
+
+    .signin-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .signin-container input[type="text"], .signin-container input[type="password"] {
+        width: 100%;
+        margin-left: 0;
+    }
+}
